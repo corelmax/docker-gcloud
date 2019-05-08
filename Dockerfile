@@ -1,7 +1,5 @@
 FROM docker:stable
 
-WORKDIR /tmp
-
 RUN apk add --update make ca-certificates openssl python
 RUN update-ca-certificates
 RUN wget https://dl.google.com/dl/cloudsdk/release/google-cloud-sdk.tar.gz
